@@ -1,28 +1,31 @@
 body{
     background-color: rgb(253, 231, 224);
 }
-.left{
-    float:left;
-}
-.right{
-    float:right;
-}
 nav{
     background-color:rgb(255, 217, 0);
-    height:50px;
+    height:70px;
     margin:-10px;
     padding:5px;
     color:white;
 }
 
+.navLinks{
+    display:flex;
+    justify-content: end;
+    align-content:start;
+    margin-top: -45px;
+}
 nav a{
     text-decoration: none;
     color:white;
-    padding: 5px;
-    font-size: 20px ;
-    margin:0 auto;
+    font-size: 20px;
+   margin:5px;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .containers{
     border: 2px solid rgb(225, 217,0);
     width:200px;
