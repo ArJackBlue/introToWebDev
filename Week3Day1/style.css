@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(253, 231, 224);
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+nav{
+    background-color:rgb(255, 217, 0);
+    height:50px;
+    margin:-10px;
+    padding:5px;
+    color:white;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 5px;
+    font-size: 20px ;
+    margin:0 auto;
+}
+
+.containers{
+    border: 2px solid rgb(225, 217,0);
+    width:200px;
+    height:500px;
+    margin-top: 30px;
+    margin-left:15px;
+    padding: 15px;
+}
+.containers h3{
+    font-size: 25px;
+    font-weight: lighter;
+}
+button{
+    background-color:rgb(255, 217, 0) ;
+    width:100%;
+    color:white;
+    border: none;
+    height:30px;
+}
