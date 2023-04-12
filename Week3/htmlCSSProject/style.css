@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+h2 {
+    font-family: 'Roboto=Mono', sans-serif;
+    font-size: xx-large;
+    text-align: start;
+}
+
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    justify-content: space-between;
+    height: 50px;
+    background:transparent;
+
+}
+
+h1 {
+    font-size: xx-large;
+    display: flex;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto-Mono';
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-size: x-large;
+    padding: 8px;
+}
+
+
+.coverPhoto {
+    background-image: url(HTMLProjectAssets/HTMLProjectAssets/green-vegetables-on-brown-wooden-chopping-board-3952047.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 658px;
+}
+
+.container {
+    margin-left: 300px;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 200px;
+    
+}
+
+.container h1 {
+    font-size: 80px;
+}
+
+.container p {
+    font-size: 30px;
+}
+
+.container hr {
+   margin-left:-300px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.containerTwo {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.containerTwo img {
+    height: 300px;
+    width: 400px;
+}
+
+.bread,
+.pasta {
+    height: 350px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 8px;
+}
+
+.pineapple {
+    background-color: #131313;
+    padding: 8px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.pasta {
+    background-color: #202020;
+}
+
+.words {
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 100px;
+}
+
+.words h2 {
+    margin-bottom: 5px;
+}
