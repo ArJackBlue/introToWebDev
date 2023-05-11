@@ -13,6 +13,7 @@ nav{
     display:flex;
     justify-content: end;
     align-content:start;
+    flex-flow: row wrap;
     margin-top: -45px;
 }
 nav a{
@@ -20,11 +21,15 @@ nav a{
     color:white;
     font-size: 20px;
    margin:5px;
+   display: flex;
+   flex-flow: row wrap;
+
 }
 
 .container{
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 .containers{
     border: 2px solid rgb(225, 217,0);
