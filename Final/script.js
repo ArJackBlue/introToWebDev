@@ -4,25 +4,32 @@ $("#submit").on("click", function(){
     $('.commentContainer').append(`
     <div class="userComment">
     <img src="Daco_2478382.png" class="profileImage" alt="">
-    <div class="displayUser">
-        <h4> </h4>
-    </div>
+        <h4 class="displayedUser"> </h4> <a href="#" class="edit editContainer">Edit</a>
+    <a href="#" class="delete editContainer"> Delete</a>
     <p class="userPara"> </p>
-    <div class="editContainer">
-   <a href="#" class="edit">Edit</a>
-    <a href="#" class="delete"> Delete</a>
-</div>
+  
     </div>
   `);
- $(".displayUser").text((name));
- $(".userPara").text((words)); 
+  var newComment = $('.commentContainer').children('.userComment:last-child');
+newComment.find('.displayedUser').text(name);
+newComment.find('.userPara').text(words);
   console.log((name))
   console.log((words))
+
+  newComment.find('.delete').on("click", function(){
+    $(this).closest('.userComment').remove();
+  })
+
+
+ newComment.find('.edit').on("click", function(){
+    var commentText = $(this).closest('.userComment').find('.userPara');
+    var newCommentText = prompt("Enter the edited comment")
+    if(newCommentText !== null){
+        commentText.text(newCommentText);
+    }
+ })
+ $("#displayName").val("");
+ $("#comment").val("");
 })
-$(".edit").on("click", function(){
-})
-$(".delete").on("click", function(){
-  var targetDelete = $(".userComment");
-   $(this).addClass('itemDelete');
-   $(targetDelete).remove()
-})
+
+
